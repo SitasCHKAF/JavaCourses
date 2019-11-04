@@ -12,7 +12,10 @@ class Lesson2 {
      * хвост отбрасываем без откругления
      */
     static int formula(int x) {
-        return 0;
+        double y;
+        y=Math.sqrt(13*x+13/x);
+        x= (int) y;
+        return x;
     }
 
     /**
@@ -29,7 +32,16 @@ class Lesson2 {
      * @return возвращаем инициалы в верхнем регистре разделенные точкой, как в примере выше
      */
     static String initials(String fullName) {
-        return null;
+        String UpName=fullName.toUpperCase();
+        String [] massive = UpName.split(" ");
+        String IN1=massive [0];
+        String IN2=massive [1];
+        String IN3=massive [2];
+        char cIN1=IN1.charAt(0);
+        char cIN2=IN2.charAt(0);
+        char cIN3=IN3.charAt(0);
+        fullName= cIN1+ "." + cIN2 + "." + cIN3 +".";
+        return fullName;
     }
 
 }
