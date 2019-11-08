@@ -34,13 +34,15 @@ class Lesson2 {
     static String initials(String fullName) {
         String UpName=fullName.toUpperCase();
         String [] massive = UpName.split(" ");
-        String IN1=massive [0];
-        String IN2=massive [1];
-        String IN3=massive [2];
-        char cIN1=IN1.charAt(0);
-        char cIN2=IN2.charAt(0);
-        char cIN3=IN3.charAt(0);
-        fullName= cIN1+ "." + cIN2 + "." + cIN3 +".";
+        String IN=massive [0];
+        char cIN=IN.charAt(0);
+        fullName= cIN+ ".";
+        IN=massive[1];
+        cIN=IN.charAt(0);
+        fullName=fullName+cIN+ ".";
+        IN=massive[2];
+        cIN=IN.charAt(0);
+        fullName=fullName+cIN+".";
         return fullName;
     }
 
