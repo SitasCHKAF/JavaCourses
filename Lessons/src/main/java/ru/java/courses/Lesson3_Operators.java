@@ -18,7 +18,7 @@ public class Lesson3_Operators {
      * - получить первые n символов из строки можно методом .substring(0, n)
      */
     public static String task1(int i, String str) {
-       str= i > 0 ? str+i :( i<0 ? i+str : "0" );  //Скобки для наглядности
+       str= i > 0 ? str+i :( i<0 ? i+str : "0" );  // Скобки для наглядности
         return str.length() <= 10 ? str : str.substring(0, 10);
     }
 
