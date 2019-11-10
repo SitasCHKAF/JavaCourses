@@ -13,7 +13,7 @@ class Lesson2 {
      */
     static int formula(int x) {
         double y;
-        y=Math.sqrt(13*x+13/x);
+        y=Math.sqrt(13*x+13.0 /x);
         x= (int) y;
         return x;
     }
@@ -43,7 +43,7 @@ class Lesson2 {
         IN=massive[2];
         cIN=IN.charAt(0);
         fullName=fullName+cIN+".";
-        return fullName;
+        return fullName; //XTO
     }
 
 }
